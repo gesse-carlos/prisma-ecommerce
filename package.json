@@ -1,5 +1,6 @@
 {
   "name": "prisma-ecommerce",
+  "description": "TypeScript version of react-ecommerce repository",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",

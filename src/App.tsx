@@ -1,7 +1,9 @@
+import Routes from './pages/Routes';
+
 function App() {
   return (
     <div className="App">
-      <h1>Prisma Ecommerce</h1>
+      <Routes />
     </div>
   );
 };

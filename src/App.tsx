@@ -5,7 +5,6 @@ import GlobalStyles from './styles/GlobalStyles';
 
 function App() {
   const theme = useAppSelector((state) => state.theme);
-  console.log(theme);
 
   return (
     <div className="App">

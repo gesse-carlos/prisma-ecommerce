@@ -10,15 +10,16 @@ export const Header = styled.header`
 `;
 
 export const SearchButton = styled.button`
-  background-color: Transparent;
-  color: ${(props) => props.theme.colors.white};
+  background-color: rgb(255, 255, 255);
+  color: ${(props) => props.theme.colors.black};
   background-repeat: no-repeat;
   border: none;
+  border-radius: 0 3px 3px 0;
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  margin-left: 20px;
   margin-top: 25px;
+  padding: 4px 6px 4px 4px;
   font-size: 1.5rem;
 `;
 
@@ -42,7 +43,7 @@ export const PrismaLogo = styled.img`
 
 export const InputContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   margin-bottom: 20px;
   margin-left: 13vw;
 `;

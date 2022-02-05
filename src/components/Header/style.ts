@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Header = styled.header`
+export const ContentHeader = styled.header`
   display: flex;
   width: 100vw;
   height: 15vh;
@@ -32,8 +32,7 @@ export const CartButton = styled.button`
   overflow: hidden;
   outline: none;
   margin-left: 29vw;
-  margin-top: 20px;
-  font-size: 1.5rem;
+  font-size: 2rem;
 `;
 
 export const PrismaLogo = styled.img`
@@ -54,6 +53,7 @@ export const LogoContainer = styled.span`
 
 export const CartButtonContainer = styled.div`
   display: flex;
+  margin-top: 10px;
 `;
 
 export const CartQuantity = styled.span`

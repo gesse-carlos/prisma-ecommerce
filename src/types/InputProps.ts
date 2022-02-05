@@ -9,4 +9,5 @@ export interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
   onClick?: React.MouseEventHandler<HTMLInputElement>,
   placeholder?: string,
   value?: string,
+  labelText?: string,
 }

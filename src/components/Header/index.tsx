@@ -5,7 +5,7 @@ import { BsFillCartFill, BsSearch } from "react-icons/bs";
 
 import { shopActions } from '../../redux/reducers/shop';
 import {
-  Header,
+  ContentHeader,
   SearchButton,
   CartButton,
   PrismaLogo,
@@ -14,9 +14,9 @@ import {
   CartButtonContainer,
   CartQuantity,
 } from './style';
-import SearchInput from '../Input';
+import { SearchInput } from '../Input';
 
-function ContentHeader() {
+function Header() {
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const [query, setQuery] = useState('');
@@ -30,10 +30,10 @@ function ContentHeader() {
   const cartQuantity = useAppSelector((state) => state.cart.quantity);
 
   return (
-    <Header>
+    <ContentHeader>
       <LogoContainer>
         <PrismaLogo
-          src="../../../public/prisma-2.svg"
+          src="/prisma-2.svg"
           alt="prisma logo"
           className="prisma-logo"
         />
@@ -61,8 +61,8 @@ function ContentHeader() {
           <CartQuantity>{ cartQuantity === 0 ? '' : cartQuantity }</CartQuantity>
         </CartButtonContainer>
       </InputContainer>
-    </Header>
+    </ContentHeader>
   );
 }
 
-export default ContentHeader;
+export default Header;

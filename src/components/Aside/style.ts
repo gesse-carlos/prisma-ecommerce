@@ -5,7 +5,7 @@ export const CategoriesContainer = styled.aside`
   position: fixed;
   flex-direction: column;
   float: left;
-  width: 25%;
+  width: 25vw;
   height: 85vh;
   background-color: ${(props) => props.theme.colors.secondary};
   overflow: scroll;

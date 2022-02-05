@@ -6,8 +6,8 @@ interface IShopState {
 }
 
 const initialState: IShopState = {
-  categoryId: '',
-  query: '',
+  categoryId: 'category',
+  query: 'query',
 }
 
 export const shopSlice = createSlice({

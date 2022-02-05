@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Header from '../../components/Header';
-import Aside from '../../components/Aside';
+import { Header, Aside, Main } from '../../components';
 
 function Home() {
   return (
     <div>
       <Header />
       <Aside />
+      <Main />
     </div>
   );
 }

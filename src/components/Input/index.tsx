@@ -1,11 +1,13 @@
-import React, { InputHTMLAttributes } from 'react';
+import React from 'react';
 
-import { IInputProps } from '../../types/InputProps'; 
+import { IInputProps } from '../../types/InputProps';
+
+import { ProductSearchInput } from './style';
 
 const SearchInput: React.FC<IInputProps> = (props) => {
   return (
     <div>
-      <input {...props} />
+      <ProductSearchInput {...props} />
     </div>
   );
 };
